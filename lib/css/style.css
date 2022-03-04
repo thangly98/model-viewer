@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list .item {
+  position: relative;
+  width: 25%;
+  max-width: 400px;
+  min-width: 320px;
+}
+.list .item::before {
+  display: block;
+  content: '';
+  padding-bottom: 100%;
+}
+.list .item model-viewer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
